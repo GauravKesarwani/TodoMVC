@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Marionette Todo Application</title>
+  <link href="./assets/bower_components/bootstrap-css/css/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="region-header">  
+  </div>
+  <div id="region-main">
+    <div class="container"> 
+      <div id="region-todo-add"></div> 
+      <div id="region-todo-list"></div> 
+      <div id="region-todo-filter"></div> 
+    </div>
+  </div>
+  <div id="region-footer">  
+  </div>
+
+  <script data-main="./config/rconfig.js" src="./assets/bower_components/requirejs/require.js"></script>
+
+  <!-- Template files -->
+  <!-- Todo: precompile templates and load it via require -->
+
+  <!-- Add Todo Item view template -->
+  <script type="text/html" id="template-todoAddItemView">
+    <div class="js-todo__add-form">
+      <input class=" todo__text-input js-todo__text-input" type="text" placeholder="Add a todo and press enter"></input>
+      <button class="js-todo__add-button btn btn-success">Add</button>
+    </form>
+  </script>
+
+  <!-- List todo item view -->
+  <script type="text/html" id="template-todoListItem">
+    <div class="checkbox">
+      <label>
+        <input class="js-todo-completed" type="checkbox" <%- completed %> <%- checked %>>
+        <%- title %>
+      </label>
+    </div>
+  </script>
+
+  <!-- Filter todo template -->
+  <script type="text/html" id="template-todoFilterItem">
+    <ul>
+      <li class="js-todo-filter__all"><a href="#index">All Tasks</a></li>
+      <li class="js-todo-filter__remaining"><a href="#remaining">Remaining Tasks</a></li>
+      <li class="js-todo-filter__completed"><a href="#completed">Completed Tasks</a></li>
+    </ul>
+  </script>
+</body>
+</html>

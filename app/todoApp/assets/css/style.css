@@ -1,0 +1,26 @@
+#region-todo-add .todo-addItem-form {
+  margin-left: 40px; }
+  #region-todo-add .todo-addItem-form .todo__text-input {
+    width: 250px; }
+
+#region-todo-list {
+  margin: 10px 0; }
+  #region-todo-list li {
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  #region-todo-list li:nth-child(odd) {
+    background-color: #dff0d8; }
+  #region-todo-list .checkbox {
+    margin-top: 0; }
+
+#region-todo-filter li {
+  list-style: none;
+  float: left;
+  width: 150px;
+  text-align: center;
+  cursor: pointer; }
+
+.container {
+  margin-top: 100px; }
+
+/*# sourceMappingURL=style.css.map */

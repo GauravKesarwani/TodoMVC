@@ -1,0 +1,16 @@
+#region-todo-list {
+  margin: 10px 0;
+  
+  li {
+    list-style: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  li:nth-child(odd) {
+    background-color: #dff0d8;
+  }
+
+  .checkbox {
+    margin-top: 0;
+  }
+}

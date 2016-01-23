@@ -1,0 +1,27 @@
+{
+  "name": "TodoApp",
+  "version": "0.0.1",
+  "authors": [
+    "Gaurav Kesarwani"
+  ],
+  "description": "'A simple todo mvc app'",
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "todoapp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone-localstorage": "~0.3.2",
+    "backbone": "~1.2.3",
+    "bootstrap-css": "~3.3.6",
+    "jquery": "~2.2.0",
+    "marionette": "~2.4.4",
+    "requirejs": "~2.1.22",
+    "json2": "*"
+  }
+}
